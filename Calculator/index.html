@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calculator </title>
+    <link rel="stylesheet" href="Styles/style.css">
+</head>
+
+<body>
+    <main>
+        <section>
+            <table>
+                <thead>
+                    <th colspan="4">
+                        Calculator
+                    </th>
+                </thead>
+                <tbody class="tbody">
+                    <tr>
+                        <td colspan="4"> <input type="text" placeholder="0" id="text1"> </td>
+                    </tr>
+                    <tr>
+                        <td> <button onclick="reset()" value="C"> C </button> </td>
+                        <td> <button value="/" onclick="display(this.value)"> / </button> </td>
+                        <td> <button value="*" onclick="display(this.value)"> * </button> </td>
+                        <td> <button value="-" onclick="display(this.value)"> - </button> </td>
+                    </tr>
+                    <tr>
+                        <td> <button value="7" onclick="display(this.value)"> 7 </button> </td>
+                        <td> <button value="8" onclick="display(this.value)"> 8 </button></td>
+                        <td> <button value="9" onclick="display(this.value)"> 9 </button></td>
+                        <td rowspan="2"> <button value="+" onclick="display(this.value)"> + </button></td>
+                    </tr>
+                    <tr>
+                        <td> <button value="4" onclick="display(this.value)"> 4 </button> </td>
+                        <td> <button value="5" onclick="display(this.value)"> 5 </button> </td>
+                        <td> <button value="6" onclick="display(this.value)"> 6 </button> </td>
+                    </tr>
+                    <tr>
+                        <td> <button value="1" onclick="display(this.value)"> 1 </button> </td>
+                        <td> <button value="2" onclick="display(this.value)"> 2 </button> </td>
+                        <td> <button value="3" onclick="display(this.value)"> 3 </button> </td>
+                        <td rowspan="2"> <button onclick="compute()"> = </button> </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"> <button value="0" onclick="display(this.value)"> 0 </button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>Made by &copy; Anchal Singh</p>
+    </footer>
+    <script src="Script/index.js"></script>
+</body>
+
+</html>
