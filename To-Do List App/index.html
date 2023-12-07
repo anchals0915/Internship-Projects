@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Todo app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="Styles/style.css">
+</head>
+
+<body>
+  <main class="image-container">
+
+    <img src="images/bg-desktop-dark.jpg">
+    
+    <div class="container" >
+      <div class="todo-app" style="font-size: 18px ;">
+        <h2 style="font-size: 2rem;">TODO<img src="images/icon.png" alt=""> </h2>
+        <div class="row">
+          <input type="text" id="input-box" placeholder="Create a new todo..">
+          <button onclick="addTask()"> Add </button>
+        </div>
+        
+        <ul id="list-container">
+
+        </ul>
+      </div>
+    </div>
+
+  </main>
+  <script src="Script/index.js"></script>
+</body>
+</html>
